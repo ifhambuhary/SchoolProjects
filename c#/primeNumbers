@@ -1,0 +1,109 @@
+/*************************************************************************************
+ * Program Name:    Lab03Prime Numbers
+ * Author's Name:   Ifham Seyed Buhary
+ * Date:            February 26, 2019
+ * 
+ * Description:     A console application that asks the user to enter value between 1 
+                    to 70. The application then displays the prime numbers till that 
+                    value.                 
+ *************************************************************************************/
+
+ using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Prime_Numbers_Ifham
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //DECLARATIONS
+
+            const int MinimumPrimeNumber = 2;    // Initialize the smallest prime number
+            const int MaximumNumber = 70;       // Initialize the maximum limit of a number user can enter
+            const int MinimumLimit = 1;         // Intialize the minimum limit to print X.
+            
+            string userInput;       // A variable to hold the value of user input from console
+            int primeNumber;        // A variable to hold the converted to INT value of user Input vlaue
+
+
+            // Display Header for User Input
+            Console.Write("******************************************************");
+            Console.WriteLine("\t\t\t\t\t\t\t\t\t\t\tPRIME NUMBER FINDER");
+            Console.WriteLine("******************************************************");
+
+            //  Prompt for initial user input
+            Console.Write("\n\n\nEnter a limit to the prime numbers you want displayed: ");
+
+            // repeat the following steps until user enters nothing and hit Enter
+            do
+            {               
+                //Get the initial user input from the console and store it as a string 
+                userInput = Console.ReadLine();
+
+                //  Check if user input is a valid numeric value, save result to primeNumber variable
+                if (Int32.TryParse(userInput, out primeNumber))
+                {
+                    // Check if the primeNumber is within the valid range
+                    if (primeNumber >= MinimumPrimeNumber && primeNumber <= MaximumNumber)
+                    {
+                        Console.Clear();            // Clear Console to display the prime numebers with in range of User input value
+
+                        // Display header for prime numebers with in range of User input value
+                        Console.Write("******************************************************");
+                        Console.WriteLine("\t\t\t\t\t\t\t\t\t\t\tPRIME NUMBERS UP TO " + primeNumber);
+                        Console.WriteLine("******************************************************");
+
+                        // set int numerator to MinimumPrimeNumber, numerator is less than or equal to primeNumber, increment numerator one by one
+                        for (int numerator = MinimumPrimeNumber; numerator <= primeNumber; numerator++)
+                        {
+                            // create a flag to set prime numbers
+                            bool validPrime = true;
+
+                            // set int denominator to MinimumPrimeNumber, denominator is less than or equal to sqaure rooted value of numerator, increment denominator one by one
+                            for (int denominator = MinimumPrimeNumber; denominator <= Math.Sqrt(numerator); denominator++)
+                            {
+                                // check if the numerator and deniminator division gives the quotient of zero
+                                if (numerator % denominator == 0)
+                                {
+                                    // if the quotient is zero set the prime numebr flag to false; i.e: non-prime numbers will be set to false flag
+                                    validPrime = false;
+                                    break;      // exit the if loop
+                                }
+                            }
+
+                            // look for prime numbers where they have true flag 
+                            if (validPrime)
+                            {
+                                // set x to MinimumLimit, x is less than or equal to numerator, increment x one by one
+                                for (int x = MinimumLimit; x <= numerator; x++)
+                                {
+                                    // print out x tot he number of numerator
+                                    Console.Write("X");
+                                }
+                                Console.Write(" ");     // leave a space between printed out x's and numerator
+                                Console.WriteLine(numerator); // print out numertor, which are valid prime numbers
+                            }
+                        }
+                        Console.WriteLine("\nPress any key to end the program");        // prompt the user to end the program by pressing any key
+                        Console.ReadLine();// read key from console and exit the program
+                    }
+                    else
+                    {
+                        // Display a descriptive entry of non-range error message
+                        Console.Write("The value entered must be between 2 and 70. Please try again: ");
+                    }
+                }
+                else
+                {
+                    // Display a descriptive entry of non-numeric error message
+                    Console.Write("The value entered must be a whole number. Please try again: ");
+                }
+                
+            } while (userInput != "");
+        }
+    }
+}
