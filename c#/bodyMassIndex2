@@ -1,0 +1,143 @@
+/*************************************************************************************
+ * Program Name:    Lab02BodyMassIndex
+ * Author's Name:   Ifham Seyed Buhary and Carlo Recana
+ * Date:            February 11, 2019
+ * 
+ * Description:     A console application that asks the user to properly input the numeric 
+ *                  number of height and weight then calculates the BMI and displays 
+ *                  "The BMI for "height" tall person who weighs "weight" lb. is "BMI"" and if they're
+ *                  severely underweight, underweight, healthy, overweight, or obese.                  
+ *************************************************************************************/
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab02BodyMassIndex
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //////////////      DECLARE VARIABLES AND CONSTANTS     //////////////
+
+            // Constant integer for minimum height and maximum of height
+            const int minHeight = 5;                                
+            const int maxHeight = 120;
+
+            // Holds the user input for height in inches
+            double userHeight = 0;
+
+            // Constant integer for minimum and maximum range of weight
+            const double minWeight = 0.5;
+            const double maxWeight = 999;
+
+            // Holds the user input for weight in pounds
+            double userWeight = 0;
+
+            // Holds the string to tell if the person is severely underweight, underweight, healthy, overweight, or obese
+            string bmiMessage = "";
+
+            // Hold the value of the calculation for the BMI
+            double bodyMassIndex = 0.0;
+
+            // The number multiplied to calculate the BMI
+            const int bmiCal = 703;
+
+            //////////////      INPUT       //////////////
+            
+            // Prompt the user to input height in inches
+            Console.Write("Please enter the person's height in inches: ");
+         
+            // An if statement to make sure the data input is a double data type for height
+            if (double.TryParse(Console.ReadLine(), out userHeight))
+            {
+                // An if statement to make sure that the user input is between the range of minimum height and maximum height
+                if (userHeight >= minHeight & userHeight <= maxHeight)
+                {
+                    // Prompt the user to input weight in pounds
+                    Console.Write("Please enter the person's weight in pounds: ");                    
+
+                    // Checks to see if the user input is true, falls if it fails
+                    // An if statement to make sure the data input is a double data type for weight
+                    if (double.TryParse(Console.ReadLine(), out userWeight))
+                    {                        
+                        // Makes sure the user input is between the range of minimum weight and maximum weight
+                        if (userWeight >= minWeight & userWeight <= maxWeight)
+                        {
+                            //////////////      CALCULATION     //////////////
+                            
+                            // Calculates the body mass index
+                            bodyMassIndex = Math.Round(userWeight / Math.Pow(userHeight, 2) * bmiCal, 1);
+
+                            //////////////      PROCESSING      //////////////                        
+
+                            // Determining the additional message based on the user's output from BMI
+                            if (bodyMassIndex < 16)
+                            {
+                                bmiMessage = ", which is categorized as \"severely underweight\".";
+                            }
+                            else if (bodyMassIndex >= 16 & bodyMassIndex <= 18.5)
+                            {
+                                bmiMessage = ", which is categorized as \"underweight\".";
+                            }
+                            else if (bodyMassIndex >= 18.5 & bodyMassIndex <= 25)
+                            {                              
+                                bmiMessage = ", which is categorized as \"healthy\".";
+                            }                         
+                            else if (bodyMassIndex >= 25 & bodyMassIndex <= 30)
+                            {                              
+                                bmiMessage = ", which is categorized as \"overweight\".";
+                            }
+                            else
+                            {                               
+                                bmiMessage = ", which is categorized as \"obese\".";
+                            }
+                            //////////////      OUTPUT      //////////////
+                            // Output result to the user plus the proper message of the range of the BMI
+                            Console.WriteLine("\nThe BMI for a " + userHeight + "\" tall person who weighs " + userWeight + " lb. is " + bodyMassIndex + bmiMessage);
+                        }
+                        // User input is not within range
+                        else
+                        {
+                            // Gives an error message
+                            Console.WriteLine("\nENTRY ERROR!");
+                            Console.WriteLine("\nThe weight entered must be between {0} and {1} pounds inclusive", minWeight, maxWeight);
+                        }
+
+                    }
+                    // User input is not a double data type
+                    else
+                    {
+                        // Tells user the input is not valid and must be a double data type
+                        Console.WriteLine("\nThis is not a valid input. The value entered must be numeric!");
+                    }
+
+                }
+                // User input is not within range of height
+                else
+                {
+                    // User input is not valid and must be in range
+                    Console.WriteLine("\nENTRY ERROR!");
+                    Console.WriteLine("\nThe height entered must be between {0}\" and {1}\" inclusive", minHeight, maxHeight);
+                }
+            }
+            // User input is not a double data type
+            else
+            {
+                // User input is not valid and must be a double data type
+                Console.WriteLine("\nThis is not a valid input. The value entered must be numeric!");
+            }
+
+            // Prompt user to put any key to exit
+            Console.Write("\nPress any key to end this application...");
+
+            // Pause for an entry of a character, end the program on the press of any key
+            Console.ReadKey();
+
+
+        }
+    }
+}
