@@ -1,0 +1,75 @@
+/*************************************************************************************
+ * Program Name:    OurFirstLab
+ * Author's Name:   Ifham Seyed Buhary and Carlo Recana
+ * Date:            January 28, 2019
+ * 
+ * Description:     A console application that asks the user to input height in
+ *                  inches, followed by weight in pounds and displays a "The BMI for
+ *                  a "height" tall person who weighs "weight" lb. is "BMI"".
+ *                  
+ *************************************************************************************/
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab01BodyMassIndex
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ///////// DECLARE VARIABLES AND CONSTANTS /////////
+
+            // Holds user input of height in inches
+            double userHeight = 0.0;
+
+            // Hold user input of weight in pounds
+            double userWeight = 0.0;
+
+            // Holds the value of the calculation of BMI
+            double bodyMassIndex = 0.0;
+
+            // The number multiplied to calculate the BMI
+            const int bmiCal = 703;
+
+
+            /////////             INPUT               /////////
+
+            // Prompt user to input height in inches
+            Console.Write("Please enter the person's height in inches: ");
+
+            // Convert user input to double data type
+            userHeight = Convert.ToDouble(Console.ReadLine());
+
+            // Prompt user to input weight in pounds
+            Console.Write("Please enter the person's weight in pounds: ");
+
+            // Convert user input to double data type
+            userWeight = Convert.ToDouble(Console.ReadLine());
+
+
+            /////////          CALCULATION            /////////
+
+            bodyMassIndex = Math.Round(userWeight / Math.Pow(userHeight, 2) * bmiCal, 1);
+
+
+            /////////             OUTPUT              /////////
+
+            // Output result to the user
+            Console.WriteLine("\nThe BMI for a " + userHeight + "\" tall person who weighs " + userWeight + " lb. is " + bodyMassIndex);
+
+            // Prompt user to put any key to exit
+            Console.Write("\nPress any key to end this application...");
+
+            // Pause for an entry of a character, end the program on the press of any key
+            Console.ReadKey();
+
+
+
+        }
+    }
+}
