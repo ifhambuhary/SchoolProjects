@@ -1,0 +1,94 @@
+/******************************************************************************
+ ******************************************************************************
+ * Author Name  :   Ifham Buhary
+ * Date         :   February 26, 2019
+ * Description  :   A console application in which the user can enter a 
+ *                  diameter of a pizza, then view the area of each pizza 
+ *                  slice based on different configurations. The user is 
+ *                  then able to enter another diameter, view the results 
+ *                  and continue on until they choose to end the program 
+ *                  by entering ‘0’ for a diameter.
+ * ***************************************************************************
+ * ***************************************************************************/
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PizzaLoops
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Declaration and Initializing
+
+            //Constants
+            const double MINIMUM_DIAMETER = 12.0;
+            const double MAXIMUM_DIAMETER = 36.0;
+            const double SMALL_DIAMETER = 20.0;
+            const double MEDIUM_DIAMETER = 24.0;
+            const double LARGE_DIAMETER = 30.0;
+            const int SMALL_SLICE_MAXIMUM = 8;
+            const int MEDIUM_SLICE_MAXIMUM = 12;
+            const int LARGE_SLICE_MAXIMUM = 16;
+            const int EXTRA_LARGE_SLICE_MAXIMUM = 24;
+            const int MORE_SLICES = 4;
+
+            //Variables
+            double diameter = 0.0;
+            int maximumSlice = 0;
+            double sliceArea = 0.0;
+            double pizzaArea = 0.0;
+            int slices = 0;
+
+            Console.Write("Please enter the diameter of your pizza: ");
+
+            do
+            {
+                if (double.TryParse(Console.ReadLine(), out diameter) == false)
+                {
+                    Console.WriteLine("ENTRY NON NUMERIC ERROR");
+                    Console.WriteLine("Pizza must have a numeric diameter. You have entered: " + diameter);
+                    Console.WriteLine("Please try again.");
+                }
+                else if (diameter >= MINIMUM_DIAMETER && diameter <= MAXIMUM_DIAMETER)
+                {
+                    Console.WriteLine("/nPizza Diameter: " + diameter);
+                    Console.WriteLine("===============================================");
+                    pizzaArea = Math.PI * (diameter / 2) * (diameter / 2);
+                    
+                    if(pizzaArea <= SMALL_DIAMETER)
+                    {
+                        maximumSlice = SMALL_SLICE_MAXIMUM;
+                    }
+                    else if(pizzaArea <= MEDIUM_DIAMETER)
+                    {
+                        maximumSlice = MEDIUM_SLICE_MAXIMUM;
+                    }
+                    else if(pizzaArea <= LARGE_DIAMETER)
+                    {
+                        maximumSlice = LARGE_SLICE_MAXIMUM;
+                    }
+                    else
+                    {
+                        maximumSlice = EXTRA_LARGE_SLICE_MAXIMUM;
+                    }
+
+                    for (slices = SMALL_SLICE_MAXIMUM; slices <= maximumSlice; MORE_SLICES++)
+                    {
+
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("ENTRY RANGE ERROR");
+                    Console.WriteLine("Pizza must have a diameter in the range of {0}\" to {1}\" inclusive! ", MINIMUM_DIAMETER , MAXIMUM_DIAMETER);
+                    
+                }
+            } while (diameter > 0);
+
+        }
+    }
+}
