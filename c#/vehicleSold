@@ -1,0 +1,168 @@
+/************************************************************************
+ ************************************************************************
+ * Program:     VehiclesSold                                            *
+ *                                                                      *
+ * Author(s):   Ifham Buhary                                            *
+ *                                                                      *
+ * Date:        16 March 2019                                              *
+ *                                                                      *
+ * Description: This program allow the user to enter the number of      *
+ *              vehicles sold at a deal for each of day of one week     *
+ *              (seven days in total). The program will calulate the    *
+ *              average, highest and lowest daily number of vehicles    *
+ *              sold and will display a formatted report. The program   *
+ *              will then provide the user with the option to repeat    *
+ *              the sequence for another week.                          *
+ ************************************************************************                                                                     
+ ************************************************************************/
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace VehiclesSold
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /************************************************---DECLARATIONS---******************************************************/
+
+            const int numberOfDays = 7;                                 //The number of days for the week
+            string userInput = "";                                      //store user input
+
+            const int minimumVehiclesSold = 0;                          //Minimum Vehicles that can be sold for the day
+            const int maximumVehiclesSold = 50;                         //Maximum Vehciles that can be sold for the day
+
+            int[] daySales = new int[numberOfDays];                     //Array Declared
+
+            double averageVehiclesSold = 0.0;                         //Average Vehicles sold
+            int sumVehiclesSold = 0;                                    //Total Vehicles sold in a week
+
+            int lowestDay = 1;                                          //Day the lowest number of Vehicles was sold
+            int highestDay = 1;                                         //Highest number of Vehicles sold
+
+            int lowestVehiclesSold;                                     //Day the lowest number of Vehicles was sold
+            int highestVehiclesSold;                                    //Day the highest number of Vehicles was sold
+
+            string anotherWeek = "";                                    //Message to prompt for the following week
+
+            /************************************************---INPUT---******************************************************/
+
+            do
+            {
+                //Iterating up to the number of days in a week
+                for (int salesCounter = 1; salesCounter < numberOfDays + 1; salesCounter++)
+                {
+                    // Prompt the user for the number of vehicles sold each day
+                    Console.Write("Please enter the number of vehciles sold on Day " + salesCounter + ": ");
+                    userInput = Console.ReadLine();
+
+                    // Validate input from the user - re-prompt as needed
+                    // The use of TryParse below will store each valid value in elements in the array for number of vehciles sold                 
+                    if (int.TryParse(userInput, out daySales[salesCounter - 1]) == false)
+                    {
+                        //If the user inputs a decimal value, following error message is displayed
+                        if (decimal.TryParse(userInput, out decimal value))
+                        {
+                            Console.Write("\n\"" + userInput + "\" is not a valid entry.");
+                            Console.Write("\nThe amount must be a whole number. Please try again.\n");
+                            salesCounter--;
+                        }
+                        //If the user inputs a string value, following error message is displayed
+                        else
+                        {
+                            Console.Write("\n\"" + userInput + "\" is not a valid entry.");
+                            Console.Write("\nThe amount must be numeric. Please try again.\n");
+                            salesCounter--;
+                        }
+                    }
+                    //If the user inputs a invalid range, following error message is displayed
+                    else if ((daySales[salesCounter - 1] < minimumVehiclesSold) || (daySales[salesCounter - 1] > maximumVehiclesSold))
+                    {
+
+                        Console.Write("\nThe amount must be between 0 and 50. Please try again.\n");
+                        salesCounter--;
+                    }
+                }
+
+                /************************************************---DISPLAY---******************************************************/
+
+                Console.Clear();
+                Console.Write("=========================================================================");
+                Console.Write("\n\t\t\t\tVECHILCES SOLD");
+                Console.Write("\n--------------------------------------------------------------------------");
+                Console.Write("\n\tD1: " + daySales[0] + "\tD2: " + daySales[1] + "\tD3: " + daySales[2] + "\tD4: " + daySales[3] + "\tD5: " + daySales[4] + "\tD6: " + daySales[5] + "\tD7: " + daySales[6]);
+                Console.Write("\n--------------------------------------------------------------------------");
+
+                /************************************************---PROCESSING---******************************************************/
+
+                //Initalzing both variables values to be the first value of the array for comparison
+                highestVehiclesSold = daySales[0];
+                lowestVehiclesSold = daySales[0];
+                //Finding the Day the highest and lowest number of vehicles sold
+                for (int saleCounter = 1; saleCounter < daySales.Length+1; saleCounter++)
+                {
+                    //Adding the values of the array to find the sum
+                    sumVehiclesSold += daySales[saleCounter - 1];
+                    //Comparing most vehilces sold to the current value of the array
+                    if (daySales[saleCounter - 1] > highestVehiclesSold)
+                    {
+                        //Assign current value of the array to the most vehilces sold 
+                        highestVehiclesSold = daySales[saleCounter - 1];
+                        //Assign current index+1 of the array to the day where most vehilces sold 
+                        highestDay = saleCounter;                       
+                    }
+                    //Comparing least vehilces sold to the current value of the array
+                    if (daySales[saleCounter - 1] < lowestVehiclesSold)
+                    {
+                        //Assign current value of the array to the least vehilces sold 
+                        lowestVehiclesSold = daySales[saleCounter - 1];
+                        // Assign current index+1 of the array to the day where least vehilces sold
+                        lowestDay = saleCounter;
+                    }          
+                    
+                }
+                
+                //Find the average vehicles sold. Provide answer in double
+                averageVehiclesSold = (double)sumVehiclesSold / numberOfDays;
+                //Round to nearest whole number
+                averageVehiclesSold = Math.Round(averageVehiclesSold, MidpointRounding.AwayFromZero);
+
+
+                /************************************************---OUTPUT---******************************************************/
+
+                //Diplay with a string message the average vehicles sold
+                Console.Write("\nThe average number of vehicles sold per day was " + averageVehiclesSold + " vehicles");
+                //Diplay with a string message the day most vehicles was sold
+                Console.Write("\nThe highest number of vehicles sold on Day " + highestDay +".");
+                //Diplay with a string message the day least vehciles was sold
+                Console.Write("\nThe lowest number of vehicles sold on Day " + lowestDay + ".");
+
+                //Loop to ask the user to enter another week of sales
+                do
+                {
+                    //Prompt user to enter again or exit
+                    Console.Write("\n\nWould you like to process the number of vehicles sold for another 7 days?");
+                    anotherWeek = Console.ReadLine().ToUpper();
+
+                    //Repromt untill user types either Y or N
+                } while (anotherWeek != "Y" && anotherWeek != "N");
+
+                //Clearing the console for another week of input
+                Console.Clear();
+
+                //Resetting the variables to redo the loop
+                daySales = new int[numberOfDays];
+                averageVehiclesSold=0.0;                                
+                sumVehiclesSold = 0;                                    
+                lowestDay = 1;                                          
+                highestDay = 1;
+
+                //Repromt until user has enter N
+            } while (anotherWeek != "N");
+            //END
+        }
+    }
+}
