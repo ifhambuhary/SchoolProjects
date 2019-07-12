@@ -1,10 +1,10 @@
 ﻿Option Strict On
 
 ''' <summary>
-''' Author Name:    Ifham Buhary
+''' Author Name:    Ifham Buhary (Reffered from Customer List Provided from DC Connect, Authored by Alfred Massardo)
 ''' Project Name:   Car Invetory
 ''' Date:           11-July-2019
-''' Description     Application to keep a track of Car Inventory
+''' Description     Application to keep a track of Car Inventory. 
 ''' </summary>
 Public Class frmCarInventory
 
@@ -128,6 +128,7 @@ Public Class frmCarInventory
     Private Function IsValidInput() As Boolean
         Dim returnValue As Boolean = True
         Dim outputMessage As String = String.Empty
+        Dim price As Double = 0.00
 
         'Check if Make has been selected
         If cmbMake.SelectedIndex = -1 Then
@@ -155,6 +156,17 @@ Public Class frmCarInventory
             outputMessage += "Please enter the Price of Vehicle." & vbCrLf
 
             returnValue = False
+
+        ElseIf Not Double.TryParse(txtPrice.Text.Trim, price) Then
+            outputMessage += "Please enter Numeric Value." & vbCrLf
+
+            returnValue = False
+
+        ElseIf price < 0 Then
+            outputMessage += "Value must be greater than 0." & vbCrLf
+
+            returnValue = False
+
         End If
 
         'Check to see if any value did not validate
