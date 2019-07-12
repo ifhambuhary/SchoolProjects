@@ -1,0 +1,52 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Lab1AverageUnitsShipped
+</name>
+</assembly>
+<members>
+<member name="T:Lab1AverageUnitsShipped.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Lab1AverageUnitsShipped.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Lab1AverageUnitsShipped.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:Lab1AverageUnitsShipped.MainForm.MIN_UNITS">
+ <summary>
+ Global Variables Declared
+ </summary>
+</member>
+<member name="M:Lab1AverageUnitsShipped.MainForm.btnExit_Click(System.Object,System.EventArgs)">
+ <summary>
+ Closes the Application
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab1AverageUnitsShipped.MainForm.btnEnter_Click(System.Object,System.EventArgs)">
+ <summary>
+ When Enter button is pressed, following functions will execute
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab1AverageUnitsShipped.MainForm.btnReset_Click(System.Object,System.EventArgs)">
+ <summary>
+ When the Reset button is pressed, following varialble and objects are reset. 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+</members>
+</doc>

@@ -1,0 +1,12 @@
+C:\Users\iFiBoY\source\repos\Lab1AverageUnitsShipped\Lab1AverageUnitsShipped\bin\Debug\Lab1AverageUnitsShipped.exe.config
+C:\Users\iFiBoY\source\repos\Lab1AverageUnitsShipped\Lab1AverageUnitsShipped\bin\Debug\Lab1AverageUnitsShipped.exe
+C:\Users\iFiBoY\source\repos\Lab1AverageUnitsShipped\Lab1AverageUnitsShipped\bin\Debug\Lab1AverageUnitsShipped.pdb
+C:\Users\iFiBoY\source\repos\Lab1AverageUnitsShipped\Lab1AverageUnitsShipped\bin\Debug\Lab1AverageUnitsShipped.xml
+C:\Users\iFiBoY\source\repos\Lab1AverageUnitsShipped\Lab1AverageUnitsShipped\obj\Debug\Lab1AverageUnitsShipped.vbprojAssemblyReference.cache
+C:\Users\iFiBoY\source\repos\Lab1AverageUnitsShipped\Lab1AverageUnitsShipped\obj\Debug\Lab1AverageUnitsShipped.MainForm.resources
+C:\Users\iFiBoY\source\repos\Lab1AverageUnitsShipped\Lab1AverageUnitsShipped\obj\Debug\Lab1AverageUnitsShipped.Resources.resources
+C:\Users\iFiBoY\source\repos\Lab1AverageUnitsShipped\Lab1AverageUnitsShipped\obj\Debug\Lab1AverageUnitsShipped.vbproj.GenerateResource.cache
+C:\Users\iFiBoY\source\repos\Lab1AverageUnitsShipped\Lab1AverageUnitsShipped\obj\Debug\Lab1AverageUnitsShipped.vbproj.CoreCompileInputs.cache
+C:\Users\iFiBoY\source\repos\Lab1AverageUnitsShipped\Lab1AverageUnitsShipped\obj\Debug\Lab1AverageUnitsShipped.exe
+C:\Users\iFiBoY\source\repos\Lab1AverageUnitsShipped\Lab1AverageUnitsShipped\obj\Debug\Lab1AverageUnitsShipped.xml
+C:\Users\iFiBoY\source\repos\Lab1AverageUnitsShipped\Lab1AverageUnitsShipped\obj\Debug\Lab1AverageUnitsShipped.pdb
