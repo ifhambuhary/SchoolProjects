@@ -1,0 +1,12 @@
+C:\Users\iFiBoY\source\repos\Lab3AverageUnits\Lab3AverageUnits\bin\Debug\Lab3AverageUnits.exe.config
+C:\Users\iFiBoY\source\repos\Lab3AverageUnits\Lab3AverageUnits\bin\Debug\Lab3AverageUnits.exe
+C:\Users\iFiBoY\source\repos\Lab3AverageUnits\Lab3AverageUnits\bin\Debug\Lab3AverageUnits.pdb
+C:\Users\iFiBoY\source\repos\Lab3AverageUnits\Lab3AverageUnits\bin\Debug\Lab3AverageUnits.xml
+C:\Users\iFiBoY\source\repos\Lab3AverageUnits\Lab3AverageUnits\obj\Debug\Lab3AverageUnits.vbprojAssemblyReference.cache
+C:\Users\iFiBoY\source\repos\Lab3AverageUnits\Lab3AverageUnits\obj\Debug\Lab3AverageUnits.MainForm.resources
+C:\Users\iFiBoY\source\repos\Lab3AverageUnits\Lab3AverageUnits\obj\Debug\Lab3AverageUnits.Resources.resources
+C:\Users\iFiBoY\source\repos\Lab3AverageUnits\Lab3AverageUnits\obj\Debug\Lab3AverageUnits.vbproj.GenerateResource.cache
+C:\Users\iFiBoY\source\repos\Lab3AverageUnits\Lab3AverageUnits\obj\Debug\Lab3AverageUnits.vbproj.CoreCompileInputs.cache
+C:\Users\iFiBoY\source\repos\Lab3AverageUnits\Lab3AverageUnits\obj\Debug\Lab3AverageUnits.exe
+C:\Users\iFiBoY\source\repos\Lab3AverageUnits\Lab3AverageUnits\obj\Debug\Lab3AverageUnits.xml
+C:\Users\iFiBoY\source\repos\Lab3AverageUnits\Lab3AverageUnits\obj\Debug\Lab3AverageUnits.pdb
