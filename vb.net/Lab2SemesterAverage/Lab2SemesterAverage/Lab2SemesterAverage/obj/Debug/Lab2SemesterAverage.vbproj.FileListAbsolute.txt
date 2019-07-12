@@ -1,0 +1,12 @@
+C:\Users\iFiBoY\source\repos\Lab2SemesterAverage\Lab2SemesterAverage\bin\Debug\Lab2SemesterAverage.exe.config
+C:\Users\iFiBoY\source\repos\Lab2SemesterAverage\Lab2SemesterAverage\bin\Debug\Lab2SemesterAverage.exe
+C:\Users\iFiBoY\source\repos\Lab2SemesterAverage\Lab2SemesterAverage\bin\Debug\Lab2SemesterAverage.pdb
+C:\Users\iFiBoY\source\repos\Lab2SemesterAverage\Lab2SemesterAverage\bin\Debug\Lab2SemesterAverage.xml
+C:\Users\iFiBoY\source\repos\Lab2SemesterAverage\Lab2SemesterAverage\obj\Debug\Lab2SemesterAverage.vbprojAssemblyReference.cache
+C:\Users\iFiBoY\source\repos\Lab2SemesterAverage\Lab2SemesterAverage\obj\Debug\Lab2SemesterAverage.MainForm.resources
+C:\Users\iFiBoY\source\repos\Lab2SemesterAverage\Lab2SemesterAverage\obj\Debug\Lab2SemesterAverage.Resources.resources
+C:\Users\iFiBoY\source\repos\Lab2SemesterAverage\Lab2SemesterAverage\obj\Debug\Lab2SemesterAverage.vbproj.GenerateResource.cache
+C:\Users\iFiBoY\source\repos\Lab2SemesterAverage\Lab2SemesterAverage\obj\Debug\Lab2SemesterAverage.vbproj.CoreCompileInputs.cache
+C:\Users\iFiBoY\source\repos\Lab2SemesterAverage\Lab2SemesterAverage\obj\Debug\Lab2SemesterAverage.exe
+C:\Users\iFiBoY\source\repos\Lab2SemesterAverage\Lab2SemesterAverage\obj\Debug\Lab2SemesterAverage.xml
+C:\Users\iFiBoY\source\repos\Lab2SemesterAverage\Lab2SemesterAverage\obj\Debug\Lab2SemesterAverage.pdb
