@@ -1,2 +1,2 @@
 # SchoolProjects
-All School Projects completed in Durham 
+All School Projects I completed in Durham as an indvidual and group. 
