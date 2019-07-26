@@ -1,0 +1,89 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Lab5_Ifham
+</name>
+</assembly>
+<members>
+<member name="T:Lab5_Ifham.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Lab5_Ifham.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Lab5_Ifham.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Lab5_Ifham.frmTextEditor.mnuOpen_Click(System.Object,System.EventArgs)">
+ <summary>
+ Open File Dialog
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab5_Ifham.frmTextEditor.mnuExit_Click(System.Object,System.EventArgs)">
+ <summary>
+ Exit Application
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab5_Ifham.frmTextEditor.mnuCopy_Click(System.Object,System.EventArgs)">
+ <summary>
+ Copy Text
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab5_Ifham.frmTextEditor.mnuCut_Click(System.Object,System.EventArgs)">
+ <summary>
+ Cut Text
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab5_Ifham.frmTextEditor.mnuPaste_Click(System.Object,System.EventArgs)">
+ <summary>
+ Paste Text
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab5_Ifham.frmTextEditor.mnuAbout_Click(System.Object,System.EventArgs)">
+ <summary>
+ About Program - Display in Messagebox
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab5_Ifham.frmTextEditor.mnuSaveAs_Click(System.Object,System.EventArgs)">
+ <summary>
+ Save As Dialog 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab5_Ifham.frmTextEditor.mnuSave_Click(System.Object,System.EventArgs)">
+ <summary>
+ Save Dialog
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Lab5_Ifham.frmTextEditor.mnuNew_Click(System.Object,System.EventArgs)">
+ <summary>
+ New File 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+</members>
+</doc>

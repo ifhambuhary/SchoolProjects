@@ -1,0 +1,12 @@
+C:\Users\iFiBoY\source\repos\Lab5_Ifham\Lab5_Ifham\bin\Debug\Lab5_Ifham.exe.config
+C:\Users\iFiBoY\source\repos\Lab5_Ifham\Lab5_Ifham\bin\Debug\Lab5_Ifham.exe
+C:\Users\iFiBoY\source\repos\Lab5_Ifham\Lab5_Ifham\bin\Debug\Lab5_Ifham.pdb
+C:\Users\iFiBoY\source\repos\Lab5_Ifham\Lab5_Ifham\bin\Debug\Lab5_Ifham.xml
+C:\Users\iFiBoY\source\repos\Lab5_Ifham\Lab5_Ifham\obj\Debug\Lab5_Ifham.vbprojAssemblyReference.cache
+C:\Users\iFiBoY\source\repos\Lab5_Ifham\Lab5_Ifham\obj\Debug\Lab5_Ifham.frmTextEditor.resources
+C:\Users\iFiBoY\source\repos\Lab5_Ifham\Lab5_Ifham\obj\Debug\Lab5_Ifham.Resources.resources
+C:\Users\iFiBoY\source\repos\Lab5_Ifham\Lab5_Ifham\obj\Debug\Lab5_Ifham.vbproj.GenerateResource.cache
+C:\Users\iFiBoY\source\repos\Lab5_Ifham\Lab5_Ifham\obj\Debug\Lab5_Ifham.vbproj.CoreCompileInputs.cache
+C:\Users\iFiBoY\source\repos\Lab5_Ifham\Lab5_Ifham\obj\Debug\Lab5_Ifham.exe
+C:\Users\iFiBoY\source\repos\Lab5_Ifham\Lab5_Ifham\obj\Debug\Lab5_Ifham.xml
+C:\Users\iFiBoY\source\repos\Lab5_Ifham\Lab5_Ifham\obj\Debug\Lab5_Ifham.pdb
