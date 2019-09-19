@@ -1,0 +1,14 @@
+C:\Users\iFiBoY\source\repos\Lab6_MDI_Text_Editor_Ifham\Lab6_MDI_Text_Editor_Ifham\bin\Debug\Lab6_MDI_Text_Editor_Ifham.exe.config
+C:\Users\iFiBoY\source\repos\Lab6_MDI_Text_Editor_Ifham\Lab6_MDI_Text_Editor_Ifham\bin\Debug\Lab6_MDI_Text_Editor_Ifham.exe
+C:\Users\iFiBoY\source\repos\Lab6_MDI_Text_Editor_Ifham\Lab6_MDI_Text_Editor_Ifham\bin\Debug\Lab6_MDI_Text_Editor_Ifham.pdb
+C:\Users\iFiBoY\source\repos\Lab6_MDI_Text_Editor_Ifham\Lab6_MDI_Text_Editor_Ifham\bin\Debug\Lab6_MDI_Text_Editor_Ifham.xml
+C:\Users\iFiBoY\source\repos\Lab6_MDI_Text_Editor_Ifham\Lab6_MDI_Text_Editor_Ifham\obj\Debug\Lab6_MDI_Text_Editor_Ifham.vbprojAssemblyReference.cache
+C:\Users\iFiBoY\source\repos\Lab6_MDI_Text_Editor_Ifham\Lab6_MDI_Text_Editor_Ifham\obj\Debug\Lab6_MDI_Text_Editor_Ifham.frmMain.resources
+C:\Users\iFiBoY\source\repos\Lab6_MDI_Text_Editor_Ifham\Lab6_MDI_Text_Editor_Ifham\obj\Debug\Lab6_MDI_Text_Editor_Ifham.AverageUnits.resources
+C:\Users\iFiBoY\source\repos\Lab6_MDI_Text_Editor_Ifham\Lab6_MDI_Text_Editor_Ifham\obj\Debug\Lab6_MDI_Text_Editor_Ifham.Resources.resources
+C:\Users\iFiBoY\source\repos\Lab6_MDI_Text_Editor_Ifham\Lab6_MDI_Text_Editor_Ifham\obj\Debug\Lab6_MDI_Text_Editor_Ifham.frmText.resources
+C:\Users\iFiBoY\source\repos\Lab6_MDI_Text_Editor_Ifham\Lab6_MDI_Text_Editor_Ifham\obj\Debug\Lab6_MDI_Text_Editor_Ifham.vbproj.GenerateResource.cache
+C:\Users\iFiBoY\source\repos\Lab6_MDI_Text_Editor_Ifham\Lab6_MDI_Text_Editor_Ifham\obj\Debug\Lab6_MDI_Text_Editor_Ifham.vbproj.CoreCompileInputs.cache
+C:\Users\iFiBoY\source\repos\Lab6_MDI_Text_Editor_Ifham\Lab6_MDI_Text_Editor_Ifham\obj\Debug\Lab6_MDI_Text_Editor_Ifham.exe
+C:\Users\iFiBoY\source\repos\Lab6_MDI_Text_Editor_Ifham\Lab6_MDI_Text_Editor_Ifham\obj\Debug\Lab6_MDI_Text_Editor_Ifham.xml
+C:\Users\iFiBoY\source\repos\Lab6_MDI_Text_Editor_Ifham\Lab6_MDI_Text_Editor_Ifham\obj\Debug\Lab6_MDI_Text_Editor_Ifham.pdb
